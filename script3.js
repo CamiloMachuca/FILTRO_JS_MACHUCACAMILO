@@ -5,12 +5,12 @@ document.getElementById("enviar").addEventListener('click',function(){
    
 })
 function  mostrarDatos(idd){
-    fetch('https://imdb.iamidiotareyoutoo.com/justwatch?q='+idd)
+    fetch('https://imdb.iamidiotareyoutoo.com/justwatch?q=q')
     .then(Response=>Response.json())
     .then(data=>{
         document.getElementById('datosPeliculas').innerHTML=""
         data.description.forEach(i => {
-            if(i.year==idd){
+            if (i.imdbId==idd){
                 document.getElementById('datosPeliculas').innerHTML+=`
                 <div class="info-data">
                 <div class="card">
@@ -54,9 +54,9 @@ function  mostrarDatos(idd){
             
             
                 `
-
+                
             }
-            
+           
 
                 
         });
@@ -66,4 +66,3 @@ function  mostrarDatos(idd){
 })
     
 }
-

@@ -3,15 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
-</head>
-<body>
-    <div>
-        <div id="datos2"></div>
-    </div>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
-    
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="main.js" async></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand"><i class='bx bxs-smile icon'></i> AdminSite</a>
+		<ul class="side-menu">
+			<li><a href="#" class="active"><i class='bx bxs-dashboard icon' ></i> Dashboard</a></li>
+			<li class="divider" data-text="main">Main</li>
+			<li>
+				<a href="#"><i class='bx bxs-inbox icon' ></i> FILTROS <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="./index.html">Año</a></li>
+					<li><a href="#">Actor</a></li>
+					<li><a href="#">IMDb</a></li>
+					<li><a href="./index2.html">Titulos</a></li>
+				</ul>
+			</li>
+			<li><a href="./index2.html"><i class='bx bxs-chart icon' ></i>Títulos y años de lanzamiento</a></li>
+			<li><a href="#"><i class='bx bxs-widget icon' ></i>  Identificadores y títulos </a></li>
+			<li><a href="#"><i class='bx bx-table icon' ></i> URL completas y los tipos de objetos</a></li>
+			<li>
+				<a href="#"><i class='bx bxs-notepad icon' ></i> Títulos, años de lanzamiento originales y tipos de objetos, pero solo para películas.<i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="#">Basic</a></li>
+					<li><a href="#">Select</a></li>
+					<li><a href="#">Checkbox</a></li>
+					<li><a href="#">Radio</a></li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- NAVBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu toggle-sidebar' ></i>
+			<form action="#">
+				
+			</form>
+			
+			<span class="divider"></span>
+			<div class="profile">
+				<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+				<ul class="profile-link">
+					<li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+					<li><a href="#"><i class='bx bxs-cog' ></i> Settings</a></li>
+					<li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<h1 class="title">FILTRO Titulo</h1>
+			<ul class="breadcrumbs">
+				<li><a href="#">Home</a></li>
+				<li class="divider">/</li>
+				<li><a href="#" class="active">Dashboard</a></li>
+			</ul>
+				<input type="text" class="boton1" aria-label="Search" id="idBusqueda" placeholder="Ingrese el Titulo de la pelicula">
+				<button class="enviarr" id="enviar">send</button>
+			
+				<div id="datosPeliculas"></div>
+				
+			
+			<div class="data">
+				
+			
+			</div>
+			<div id="contenedor2">
+				
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- NAVBAR -->
+	 <!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand"><i class='bx bxs-smile icon'></i> AdminSite</a>
+		<ul class="side-menu">
+			<li><a href="#" class="active"><i class='bx bxs-dashboard icon' ></i> Dashboard</a></li>
+			<li class="divider" data-text="main">Main</li>
+			<li>
+				<a href="#"><i class='bx bxs-inbox icon' ></i> FILTROS <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="./index.html">Año</a></li>
+					<li><a href="./index4.html">Actor</a></li>
+					<li><a href="./index3.html">IMDb</a></li>
+					<li><a href="./index2.html">Titulos</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i class='bx bxs-chart icon' id="TitulosLanzamiento" ></i></a></li>
+			<li><a href="#"><i class='bx bxs-widget icon' ></i>  </a></li>
+			<li><a href="#"><i class='bx bx-table icon' ></i></a></li>
+			<li>
+				<a href="#"><i class='bx bxs-notepad icon' ></i><i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="#">Basic</a></li>
+					<li><a href="#">Select</a></li>
+					<li><a href="#">Checkbox</a></li>
+					<li><a href="#">Radio</a></li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	
+		
 </body>
 <script src="./script2.js"></script>
 </html>
